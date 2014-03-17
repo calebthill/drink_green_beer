@@ -1,0 +1,29 @@
+beer = 100
+
+while beer > 0
+
+puts "hello! happy st. patricks day! there are #{beer} bottles of green beer on the wall!  would you like to drink green beer?"
+	users_input= gets.chomp 
+	if users_input == "drink green beer" 
+	beer = beer - 1
+    puts "you now have only #{beer} beers left!" 
+    else
+    puts "only green beer is accepted!"
+    end
+    
+	if beer <=10
+    puts "your beer is running low! would you like to restock? y/n____"
+    user = gets.chomp
+    if user == "y"
+    beer = 99
+    end
+    
+    if user == "n"
+    beer = beer- 1
+    end
+end
+    
+    if beer ==0
+    puts "you ran out of green beer!!!!"
+    end
+end
